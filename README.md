@@ -6,7 +6,7 @@ WEB ფინალური პროექტი
 
 - <b>სათაური</b>: SpentCut
 - <b>აღწერა</b>: ფინანსური ტრანზაქციების მაკონტროლებელი/გასაანალიზებელი პროგრამა
-- <b>API</b>:  [fintech.ge/api](fintech.ge/api)
+- <b>API</b>:  [fintech.ge/api](fintech.ge/api) (doesn't apply, so used my own data)
 
 ## Features
 
