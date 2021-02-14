@@ -1,0 +1,156 @@
+[
+    {
+        "category": "Food",
+        "location": "Entree",
+        "amount": "120",
+        "month": "January",
+        "year": "2020"
+    },
+    {
+        "category": "Gas",
+        "location": "Rompetrol",
+        "amount": "50",
+        "month": "February",
+        "year": "2020"
+    },    
+    {
+        "category": "Gas",
+        "location": "Rompetrol",
+        "amount": "70",
+        "month": "February",
+        "year": "2020"
+    },   
+    {
+        "category": "Food",
+        "location": "Agrohub",
+        "amount": "94",
+        "month": "February",
+        "year": "2020"
+    },    
+    {
+        "category": "Leisure",
+        "location": "Gudauri Ski Resort",
+        "amount": "300",
+        "month": "February",
+        "year": "2020"
+    },    
+    {
+        "category": "Leisure",
+        "location": "Cavea",
+        "amount": "42",
+        "month": "February",
+        "year": "2020"
+    },   
+    {
+        "category": "Food",
+        "location": "Glovo",
+        "amount": "58",
+        "month": "January",
+        "year": "2020"
+    },    
+    {
+        "category": "Food",
+        "location": "PAZZA",
+        "amount": "49",
+        "month": "April",
+        "year": "2020"
+    },    
+    {
+        "category": "Shopping",
+        "location": "ZARA",
+        "amount": "317",
+        "month": "January",
+        "year": "2020"
+    },    
+    {
+        "category": "Leisure",
+        "location": "Husky Motorpark",
+        "amount": "120",
+        "month": "February",
+        "year": "2020"
+    },
+    {
+        "category": "Leisure",
+        "location": "Husky Motorpark",
+        "amount": "120",
+        "month": "February",
+        "year": "2020"
+    },
+    {
+        "category": "Leisure",
+        "location": "Husky Motorpark",
+        "amount": "120",
+        "month": "February",
+        "year": "2020"
+    },
+    {
+        "category": "Shopping",
+        "location": "H&M",
+        "amount": "138",
+        "month": "February",
+        "year": "2020"
+    },
+    {
+        "category": "Shopping",
+        "location": "Nike",
+        "amount": "342",
+        "month": "January",
+        "year": "2020"
+    },    
+    {
+        "category": "Mobile",
+        "location": "MagtiCom",
+        "amount": "25",
+        "month": "January",
+        "year": "2020"
+    },
+    {
+        "category": "Food",
+        "location": "Wolt",
+        "amount": "29",
+        "month": "February",
+        "year": "2021"
+    },    
+    {
+        "category": "Shopping",
+        "location": "JNBY",
+        "amount": "123",
+        "month": "January",
+        "year": "2021"
+    },
+    {
+        "category": "Food",
+        "location": "HB",
+        "amount": "89",
+        "month": "February",
+        "year": "2021"
+    },    
+    {
+        "category": "Leisure",
+        "location": "Husky Motorparks",
+        "amount": "25",
+        "month": "January",
+        "year": "2021"
+    },
+    {
+        "category": "Leisure",
+        "location": "BrainDrain",
+        "amount": "91",
+        "month": "February",
+        "year": "2021"
+    },    
+    {
+        "category": "Gas",
+        "location": "Rompetrol",
+        "amount": "39",
+        "month": "January",
+        "year": "2021"
+    },
+    {
+        "category": "Shopping",
+        "location": "Miniso",
+        "amount": "86",
+        "month": "February",
+        "year": "2021"
+    }
+]

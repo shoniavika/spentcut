@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpentCut. Your online spendings cutter</title>
+<link rel="stylesheet" href="main.css">
+<script src="app.js"></script>
+<noscript>You need to enable JavaScript to view the full site.</noscript>
+</head>
+
+
+<body class="body">
+
+<header class="header">
+  <img src="Assets/SpentCut.png" alt="SpentCut loves you">
+</header>
+
+<div style="overflow:auto">
+  <div class="menu"></div>
+
+  <div class="main">
+    <h2>Main goals of SpentCut</h2>
+    <p>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+              <h3>As of right now, your fixed monthly limit is 600GEL. Wait for updates!</h3>
+            </div>
+
+            <div class="mySlides">
+              <h3>Assist you in taking care of your monthly budget. You can even add cashd out money.</h3>
+            </div>
+            
+            <div class="mySlides">
+              <h3>Make sure you don't go over your monthly budget limit!!!</h3>
+            </div>
+            
+            <div class="mySlides">
+              <h3>Visualize your personal spending habits by charts and categories.</h3>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+              
+              <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+            </script>
+    
+    </p>
+  </div>
+</div>
+
+<div class="footer">© copyright vshon17</div>
+
+<!-- Load React -->
+<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel" src="Menu.js"></script>
+
+
+<script type="text/babel">
+  ReactDOM.render(<Menu />, document.querySelector(".menu"))
+</script>
+
+
+</body>
+</html>

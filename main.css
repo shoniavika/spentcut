@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+header {
+    overflow: hidden;
+    width: 100%;
+    background-color:#e5e5e5;
+}
+
+header img {
+    margin-left: 15%;
+    text-align:center;
+    transform: translateX(-25%);
+    max-width: 100%;
+    height: auto;
+}
+
+.body {
+    color:#3e3ed2;
+    --stripe: #d6d6e4;
+    --bg: #cdceda;
+  
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+      linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
+}
+
+.menu {
+    float:left;
+    width:20%;
+    text-align:center;
+}
+
+.menu a {
+    background-color:#e5e5e5;
+    padding:20px;
+    margin-top:15px;
+    display:block;
+    width:100%;
+    font-size: 25px;
+    color:#0b0bee;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.main {
+    font-size: 20px;
+    float:left;
+    width:80%;
+    padding:20px 20px;
+    padding-bottom:100px;
+}
+
+.footer {
+    background-color:#e5e5e5;
+    display: flex; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 10px;
+    height:50px;
+    width: 100%;
+    justify-content:center;
+    align-items:center;
+}
+
+@media only screen and (max-width:620px) {
+    .menu, .main, .right {
+        width:100%;
+    }
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+  
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(127, 136, 202);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: #110f69;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+.fa {
+    box-sizing: content-box;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+
+form {border: 3px}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #1b1d7d;
+}
+
+button {
+    background-color: #30287a;
+    color: white;
+    padding: 14px 20px;
+    margin: 25px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    width: 50%;
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.hint {
+    color: rgb(106, 117, 223);
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.hint .hintText {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(46, 22, 153);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 15px;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.hint:hover .hintText {
+    visibility: visible;
+}    
+
+#div1 { 
+    background: #DDD; 
+    width: 50%; height: 50%; float: left; 
+    height: 100%; padding: 0; margin: 0; 
+}
+#div2 { 
+    width: 50%; height: 50%; float: left; 
+    height: 100%; padding: 0; margin: 0; 
+}
+#div3 {
+    width: 50%; height: 50%; float: left; 
+    height: 100%; padding: 0; margin: 0; 
+}
+#div4 {
+    background: rgb(150, 145, 145); 
+    width: 50%; height: 50%; float: left; 
+    height: 100%; padding: 0; margin: 0; 
+}
+
+
+table { 
+    margin: 0 auto; 
+    font-size: large; 
+    overflow-y: scroll;
+    max-height: 100px;
+    width: 100%;
+    border: 1px solid black; 
+} 
+
+td { 
+    background-color: #E4F5D4; 
+    border: 1px solid black; 
+} 
+
+th, td { 
+    font-weight: bold; 
+    border: 1px solid black; 
+    padding: 10px; 
+    text-align: center; 
+} 
+
+td { 
+    font-weight: lighter; 
+} 
+

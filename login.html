@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpentCut. Your online spendings cutter</title>
+<link rel="stylesheet" href="main.css">
+<script src="app.js"></script>
+<noscript>You need to enable JavaScript to view the full site.</noscript>
+</head>
+
+
+<body class="body">
+
+<header class="header">
+  <img src="Assets/SpentCut.png" alt="SpentCut loves you">
+</header>
+
+<div style="overflow:auto">
+  <div class="menu"></div>
+
+  <div class="main">
+    <div class="hint">Need help? Hover.
+        <span class="hintText"><b>username:</b>me <b>passw:</b>123</span>
+    </div>
+
+    <form action="/action_page.php" method="post">
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+                
+            <input type="button" value="Submit" onclick="myFunction()">
+            
+            <!-- <button type="submit" onclick="myFunction()">Login</button> -->
+
+        <script>
+        function myFunction(){
+            var login = document.getElementById("uname").value;
+            var passw = document.getElementById("psw").value;
+
+            if (login == "me" && passw == "123"){
+                window.location.href = "spendings.html";
+            } else {
+                alert("Incorrect username or password. I think you need some help;)");
+            }
+        }
+        </script>
+        </div>
+  </div>
+</div>
+
+<div class="footer">© copyright vshon17</div>
+
+<!-- Load React -->
+<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel" src="Menu.js"></script>
+
+
+<script type="text/babel">
+  ReactDOM.render(<Menu />, document.querySelector(".menu"))
+</script>
+
+
+</body>
+</html>
